@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
         
         my_list.AddLast(1);
         my_list.AddAfter(my_list.First, 2);
+        my_list.AddLast(3);
 
         foreach (int i in my_list)
         {
@@ -49,14 +50,6 @@ public class Inventory : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("In slot 3");
         }
-
-
-        /* if (gameObject.tag == "Bomb" || gameObject.tag == "Potion" || gameObject.tag == "Ammo")
-         {
-             my_list.AddFirst(1);
-             Debug.Log("In slot 1");
-         } 
-        else if(my_list.AddFirst(1))*/
     }
 }
 
